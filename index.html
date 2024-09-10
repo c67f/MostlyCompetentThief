@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Storymate Behavior Demos</title>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/styles/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap">
+
+
+
+    </head>
+    <body>
+        <div class='left-side' id="behavior list">
+            <button data-link="spoiler-demo.html" onclick="demoButtonClick(this, event)">Spoilered text</button>
+            <br>
+            <button data-link="pixel-transition-demo.html" onclick="demoButtonClick(this, event)">Page transition - pixel</button>
+            <br>
+            <button data-link="show-after-timer-demo.html" onclick="demoButtonClick(this, event)">Show after timer</button>
+            <br>
+            <button data-link="fade-after-timer-demo.html" onclick="demoButtonClick(this, event)">Fade away after timer</button>
+            <br>
+            <button data-link="bg-color-fade-demo.html" onclick="demoButtonClick(this, event)">Background color fades to a new color</button>
+            <br>
+            <button data-link="change-text-on-click-demo.html" onclick="demoButtonClick(this, event)">Change text on click</button>
+            <br>
+            <button data-link="reveal-other-on-click-demo.html" onclick="demoButtonClick(this, event)">Reveal another element on click</button>
+            <br>
+            <button data-link="reveal-other-on-click-timer-demo.html" onclick="demoButtonClick(this, event)">Reveal another element on click after a timer</button>
+            <br>
+            <button data-link="particle-burst-demo.html" onclick="demoButtonClick(this, event)">Particle burst on mouse over</button>
+            <br>
+            <button data-link="shake-demo.html" onclick="demoButtonClick(this, event)">Shake an element on mouse over</button>
+            <br>
+            <button data-link="timer-bar-demo.html" onclick="demoButtonClick(this, event)">Timer bar</button>
+            <br>
+            <button data-link="bg-color-scroll-changes-demo.html" onclick="demoButtonClick(this, event)">Background changes based on scroll position</button>
+        </div>
+
+        <iframe src="preview-frame.html" id="demo-frame" style="height:90vh; width:40vw; position:absolute; float:right;" title="Demo preview frame"></iframe>
+
+        <script src="assets/scripts/demo-buttons.js"></script>
+        <!--Behavior scripts-->
+        <script type="module" src="assets/scripts/behaviors/spoiler-text.js"></script>
+        <script type="module" src="assets/scripts/behaviors/page-transition-pixels-start.js"></script>
+        <script type="module" src="assets/scripts/behaviors/page-transition-pixels-end.js"></script>
+        <script type="module" src="assets/scripts/behaviors/page-transition-pixels-both.js"></script>
+        <script type="module" src="assets/scripts/behaviors/show-after-timer.js"></script>
+        <script type="module" src="assets/scripts/behaviors/text-fadeaway.js"></script>
+        <script type="module" src="assets/scripts/behaviors/particle-burst.js"></script>
+        <!--<script type="module" src="assets/scripts/behaviors/global-bg-fade-between.js"></script>-->
+        <script type="module" src="assets/scripts/behaviors/change-text-on-click.js"></script>
+        <script type="module" src="assets/scripts/behaviors/reveal-element-by-id.js"></script>
+        <script type="module" src="assets/scripts/behaviors/timed-reveal-by-id.js"></script>
+        <script type="module" src="assets/scripts/behaviors/particle-burst-on-mouse-over.js"></script>
+        <script type="module" src="assets/scripts/behaviors/shake-target-on-mouse-over.js"></script>
+        <script type="module" src="assets/scripts/behaviors/timed-bar-decreasing.js"></script>
+        <script type="module" src="assets/scripts/behaviors/bg-change-on-scroll-to.js"></script>
+    </body>
+</html>
