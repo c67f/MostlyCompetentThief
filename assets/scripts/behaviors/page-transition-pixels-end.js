@@ -33,7 +33,8 @@ animate('.pixel', {
     delay: stagger(50, {grid: grid}),
     opacity: [1, 0],
     //backgroundColor: utils.randomPick(colors)
-    onComplete: () => {
-
+    onComplete: target => {
+        console.log(target);
+        target.remove();
     }
 })

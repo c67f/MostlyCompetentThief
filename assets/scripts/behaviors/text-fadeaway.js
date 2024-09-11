@@ -1,18 +1,14 @@
 import { animate, createTimeline, defaults, utils } from '../anime-beta-master/lib/anime.esm.js';
 
-console.log("test");
 
-let fadingText = document.getElementsByClassName("fadeaway");
-console.log(fadingText);
-console.log(fadingText[0]);
-//console.log(utils.get(fadingText));
-
-//let animationFade = 
 createTimeline({
     defaults: {
-        duration: 5000,
+        duration: 4000,
     }
-}).add(fadingText, {
-    delay: (6000),
+}).add('.fadeaway', { //don't need getElementsByClassName!
+    delay: (target) => {
+        console.log(target);
+        return target.dataset.delay*1000;
+    },
     opacity: [1,0],
 });
