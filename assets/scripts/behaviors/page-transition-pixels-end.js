@@ -15,6 +15,7 @@ const pixelCountWidth = Math.ceil(windowWidth/pixelSize);
 const pixelCountHeight = Math.ceil(windowHeight/pixelSize)
 let grid=[pixelCountHeight, pixelCountWidth];
 
+
 for (let i = 0; i < pixelCountWidth; i++){
     //console.log(pixel);
     for (let j = 0; j < pixelCountHeight; j++) {
@@ -25,16 +26,19 @@ for (let i = 0; i < pixelCountWidth; i++){
         utils.set(pixel, {backgroundColor: utils.randomPick(colors)});
         utils.set(pixel, {translateX: i*pixelSize});
         utils.set(pixel, {translateY: j*pixelSize});
+        
     }
 }
-
+let pixels = document.getElementsByClassName('pixel');
 animate('.pixel', {
     rotate: '1turn',
     delay: stagger(50, {grid: grid}),
     opacity: [1, 0],
     //backgroundColor: utils.randomPick(colors)
-    onComplete: target => {
-        console.log(target);
-        target.remove();
+    onComplete: () => {
+        //console.log(pixel);
+        for (let i = 0; i < pixels.length; i++){
+            pixels[i].remove();
+        }
     }
 })

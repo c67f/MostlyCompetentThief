@@ -23,10 +23,19 @@ body {
     /*float: right;*/
 }
 
+.preview-body{
+    margin: 0;
+}
+
+.preview-wrapper{
+    margin-left: 10vw;
+    margin-top: 5vh;
+}
+
 .code-showcase{
-    width: 80vw;
+    width: 60vw;
     position: absolute;
-    left: 10vw;
+    left: 30vw;
     right: 90vw;
     top: 80vh;
     border-color: black;

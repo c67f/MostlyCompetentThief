@@ -14,45 +14,53 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap">
-
+        <link rel="stylesheet" href="assets/prism.css">
 
 
     </head>
     <body class="main-body">
         <div class='left-side' id="behavior list">
             <h2>Storymate SFX Showcase</h2>
-            <button class="demo-button" data-link="spoiler-demo.html" onclick="demoButtonClick(this, event)">Spoilered text</button>
+            <button class="demo-button" data-link="spoiler-demo.html">Spoilered text</button>
             <br>
-            <button class="demo-button" data-link="pixel-transition-demo.html" onclick="demoButtonClick(this, event)">Page transition - pixel</button>
+            <button class="demo-button" data-link="pixel-transition-demo.html">Page transition - pixel</button>
             <br>
-            <button class="demo-button" data-link="reveal-after-timer-demo.html" onclick="demoButtonClick(this, event)">Show after timer</button>
+            <button class="demo-button" data-link="reveal-after-timer-demo.html">Show after timer</button>
             <br>
-            <button class="demo-button" data-link="fade-after-timer-demo.html" onclick="demoButtonClick(this, event)">Fade away after timer</button>
+            <button class="demo-button" data-link="fade-after-timer-demo.html">Fade away after timer</button>
             <br>
-            <button class="demo-button" data-link="bg-color-fade-demo.html" onclick="demoButtonClick(this, event)">Background color fades to a new color</button>
+            <button class="demo-button" data-link="bg-color-fade-demo.html">Background color fades to a new color</button>
             <br>
-            <button class="demo-button" data-link="change-text-on-click-demo.html" onclick="demoButtonClick(this, event)">Change text on click</button>
+            <button class="demo-button" data-link="change-text-on-click-demo.html">Change text on click</button>
             <br>
-            <button class="demo-button" data-link="reveal-other-on-click-demo.html" onclick="demoButtonClick(this, event)">Reveal another element on click</button>
+            <button class="demo-button" data-link="reveal-other-on-click-demo.html">Reveal another element on click</button>
             <br>
-            <button class="demo-button" data-link="reveal-other-on-click-timer-demo.html" onclick="demoButtonClick(this, event)">Reveal another element on click after a timer</button>
+            <button class="demo-button" data-link="reveal-other-on-click-timer-demo.html">Reveal another element on click after a timer</button>
             <br>
-            <button class="demo-button" data-link="particle-burst-demo.html" onclick="demoButtonClick(this, event)">Particle burst on mouse over</button>
+            <button class="demo-button" data-link="particle-burst-demo.html">Particle burst on mouse over</button>
             <br>
-            <button class="demo-button" data-link="shake-demo.html" onclick="demoButtonClick(this, event)">Shake an element on mouse over</button>
+            <button class="demo-button" data-link="shake-demo.html">Shake an element on mouse over</button>
             <br>
-            <button class="demo-button" data-link="timer-bar-demo.html" onclick="demoButtonClick(this, event)">Timer bar</button>
+            <button class="demo-button" data-link="timer-bar-demo.html">Timer bar</button>
             <br>
-            <button class="demo-button" data-link="bg-color-scroll-change-demo.html" onclick="demoButtonClick(this, event)">Background changes based on scroll position</button>
+            <button class="demo-button" data-link="bg-color-scroll-change-demo.html">Background changes based on scroll position</button>
         </div>
 
         <iframe class="preview-frame" src="preview-frame.html" id="demo-frame" title="Demo preview frame"></iframe>
         <div class = "code-showcase" id = "code-showcase-window">
             <h2>Code:</h2>
-            <p id="code-container">code goes here</p>
+            <pre><code id="code-container" class="language-css">
+                body {
+                    font-family: 'Roboto';
+                    font-size: 12;
+                    color: black;
+                    background-color: white; 
+                }
+            </code></pre>
         </div>
 
-        <script src="assets/scripts/demo-buttons.js"></script>
-        <!--Behavior scripts-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="assets/prism.js"></script>
+        <script type="module" src="assets/scripts/demo-buttons.js"></script>
     </body>
 </html>
