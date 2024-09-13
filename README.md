@@ -3,7 +3,7 @@
 Open this page: https://playables-dev.github.io/storymate-animejs-toolkit/  
 to test anime.js behaviours sponsored by StoryMate.  
 
-Making your own behaviors.  
+# Making your own behaviors:  
 Most of the behaviors follow a general template for how they work. Almost all have:  
 -An html element the behavior is tied to, which has a css class identifying it to the behavior (e.g. "class='spoiler-text'")  
 -A javascript file with the behavior code with the following general structure:  
@@ -14,5 +14,5 @@ Most of the behaviors follow a general template for how they work. Almost all ha
     -With in the for loop is the code for the behavior, icnluding any triggers (such as an eventHandler for clicking) and the anime.js animation(s) themselves.  
 Many behaviors have parameters which can be changed per element. This is done by storing the values in data- attributes in the tag, and accessing them via element.dataset.data-name.  
 
-Location of example behaviors  
+# Where to find the example behaviors:  
 The javascript files for the animations and behaviors are located in website->scripts->behaviors. Each are showcased in a corresponding html stored in preview-pages, loaded into an iframe on click in index.  
