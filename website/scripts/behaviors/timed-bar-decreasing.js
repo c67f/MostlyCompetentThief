@@ -1,4 +1,4 @@
-import { Animatable, animate, createAnimatable, createTimeline, utils, stagger } from "../anime-beta-master/lib/anime.esm.js";
+import { Animatable, animate, createAnimatable, createTimeline, utils, stagger } from "../anime-beta-master/lib/anime.esm.min.js";
 
 let decreasingBarElementsArray = document.getElementsByClassName("timed-bar-decreasing");
 

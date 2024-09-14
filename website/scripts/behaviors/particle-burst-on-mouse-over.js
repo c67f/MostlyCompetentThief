@@ -1,4 +1,4 @@
-import { Animatable, animate, createAnimatable, createTimeline, utils, stagger, createTimer } from "../anime-beta-master/lib/anime.esm.js";
+import { Animatable, animate, createAnimatable, createTimeline, utils, stagger, createTimer } from "../anime-beta-master/lib/anime.esm.min.js";
 
 const emittersArray = document.getElementsByClassName('particle-burst-mouse-over');
 
