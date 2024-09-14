@@ -3,6 +3,9 @@
 Open this page: https://playables-dev.github.io/storymate-animejs-toolkit/  
 to test anime.js behaviours sponsored by StoryMate.  
 
+# Example story:
+The first few passages of a text adventure that showcase many of the behaviors are included under "example-story" - download it if you want to try it out.
+
 # Making your own behaviors:  
 Most of the behaviors follow a general template for how they work. Almost all have:  
 -An html element the behavior is tied to, which has a css class identifying it to the behavior (e.g. "class='spoiler-text'")  

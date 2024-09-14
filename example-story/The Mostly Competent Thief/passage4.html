@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The mostly-competent thief</title>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/styles/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap">
+
+
+
+    </head>
+    <body>
+        <div class="text-wrapper" id="mainStory">
+            <div id="passage1">
+                <p>The first few handholds you find easily.</p>
+                <p class="timed-show" data-timer='2' id="p4-2">The next ones...not so much</p>
+                <p class="timed-show click-change timed-reveal-other" data-timer='5' data-other-timer='2' data-new-text="After a bit of feeling around, you manage to find a crack between two bricks that you can just barely fit your hand into." data-reveal-target="handhold2" id="handhold1">A handhold.</p>
+                <div id="afterHandhold1">
+                    <p class="hidden click-change timed-reveal-other" data-other-timer="4" data-reveal-target="handhold3" data-new-text="After that, an especially knobbly brick proves to be enough to hold onto. From there, though, it takes some searching." id="handhold2">There!</p> 
+                    <div id="afterHandhold2">
+                        <p class="hidden click-change reveal-other" id="handhold3" data-reveal-target="nextPassageLink" data-new-text="Finally, you spot a couple of handholds just within reach that you can use to pull yourself up and into the window.">Phew...Finally.</p>
+                    </div>    
+                </div>
+                
+            </div>
+            <a class="hidden" id="nextPassageLink" href="./passage5.html">Clamber inside and take a breath</a>
+        </div>
+        <!--Animation-->
+        <script type=module src="assets/scripts/animations/show-after-timer.js"></script>
+        <script type=module src="assets/scripts/animations/change-text-on-click.js"></script>
+        <script type=module src="assets/scripts/animations/reveal-element-by-id.js"></script>
+        <script type=module src="assets/scripts/animations/timed-reveal-by-id.js"></script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The mostly-competent thief</title>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/styles/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap">
+
+
+
+    </head>
+    <body>
+        <div class="text-wrapper" id="mainStory">
+            <div id="passage6">
+                <p class="inline">
+                    The trap door opens with a grunt and a heave, disturbing a <p class="inline particle-burst-mouse-over" data-particle-color="#FF0077">cloud o</p class="inline">f dust into the air (and your lungs). You
+                    barely keep in a cough - any sound could alert the guards. After the dust
+                    settles and your throat no longer tickles, you tentatively lower your foot into the empty space where the trapdoor
+                    was. Though it's too dark to see, you can feel the rung of a wooden ladder. Carefully, you lower yourself onto it.
+                    and <p class="inline reveal-other" data-reveal-target="ladderBreak">climb down</p></p>
+
+                <div class="hidden" id="ladderBreak">
+                    <p>
+                        [SNAP!] Four rungs down, the next one cracks in two beneath your foot! You flail about, but regain your footing...until
+                        the rung your hands are holding onto breaks as well, sending you tumbling to the floor with a <p class="inline shake-other-mouse-over" data-shake-target="mainStory">SLAM.</p> Remember that thing about not making a sound? Yeah...
+                    </p>
+                    <a href="./passage7.html">Off in the distance you hear the sound of guards [current end of story]</a>
+                </p>
+            </div>
+        </div>
+        <!--Animation-->
+        <script type=module src="assets/scripts/animations/reveal-element-by-id.js"></script>
+        <script type=module src="assets/scripts/animations/particle-burst-on-mouse-over.js"></script>
+        <script type="module" src="assets/scripts/animations/shake-target-on-mouse-over.js"></script>
+    </body>
+</html>
