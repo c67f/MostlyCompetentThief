@@ -1,4 +1,4 @@
-import { animate, createTimeline, defaults, utils } from '../anime-beta-master/lib/anime.esm.js';
+import { animate, createTimeline, defaults, utils } from '../anime-beta-master/lib/anime.esm.min.js';
 
 let clickedTextElements = document.getElementsByClassName("click-change");
 //console.log(clickedTextElements[0]);

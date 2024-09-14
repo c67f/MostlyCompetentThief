@@ -1,4 +1,4 @@
-import { animate, createTimeline, defaults, utils } from '../anime-beta-master/lib/anime.esm.js';
+import { animate, createTimeline, defaults, utils } from '../anime-beta-master/lib/anime.esm.min.js';
 
 const bodyTagsArray = document.getElementsByTagName("body");
 //console.log(bodyTagsArray);
