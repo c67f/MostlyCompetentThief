@@ -1,6 +1,6 @@
 # storymate-animejs-toolkit
 
-Open this page: https://playables-dev.github.io/storymate-animejs-toolkit/  
+Open this page: https://playables-dev.github.io/cals-work-animejs-toolkit-example-story/
 to test anime.js behaviours sponsored by StoryMate.  
 
 # Example story:
