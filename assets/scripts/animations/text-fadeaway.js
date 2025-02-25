@@ -1,4 +1,4 @@
-import { animate, createTimeline, defaults, utils } from '../anime-beta-master/lib/anime.min.esm.js';
+import { animate, createTimeline, defaults, utils } from '../anime-beta-master/lib/anime.esm.min.js';
 
 console.log("test");
 
@@ -13,6 +13,6 @@ createTimeline({
         duration: 5000,
     }
 }).add(fadingText, {
-    delay: (6000),
+    delay: (5000),
     opacity: [1,0],
 });

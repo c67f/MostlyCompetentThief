@@ -1,4 +1,4 @@
-import { animate, createTimeline, defaults, utils } from '../anime-beta-master/lib/anime.min.esm.js';
+import { animate, createTimeline, defaults, utils } from '../anime-beta-master/lib/anime.esm.min.js';
 
 let spoileredElements = document.getElementsByClassName("spoiler");
 //console.log(clickedTextElements[0]);
